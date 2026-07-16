@@ -1,0 +1,219 @@
+[
+  {
+    "objectID": "index.html#the-shift-in-filmmaking",
+    "href": "index.html#the-shift-in-filmmaking",
+    "title": "Rolling Through the Pipeline",
+    "section": "The Shift in Filmmaking",
+    "text": "The Shift in Filmmaking\n\nLinear pipeline \\(\\rightarrow\\) Interactive, collaborative workflow\nReal-time computer graphics meets cinematic practice\nSimultaneous on-set decisions: Lighting, camera composition, and visual effects happen together rather than in sequence.\n\n\n\nTraditional filmmaking separates production and post-production.\nReal-time game engines allow departments to work together synchronously."
+  },
+  {
+    "objectID": "index.html#classic-vfx-production-pipeline",
+    "href": "index.html#classic-vfx-production-pipeline",
+    "title": "Rolling Through the Pipeline",
+    "section": "Classic VFX Production Pipeline",
+    "text": "Classic VFX Production Pipeline\nThe traditional pipeline is linear and sequential. Decisions are deferred to post-production, leading to high revision costs if changes are made late.\n\n\n\n\n\ngraph LR\n    subgraph Pre [Pre-Production]\n        Script[Script / Storyboard] --&gt; Concept[Concept Art]\n    end\n    subgraph Prod [Physical Shoot]\n        Concept --&gt; Shoot[Live Action Shoot]\n    end\n    subgraph Post [Post-Production VFX]\n        Shoot --&gt; Match[Matchmove & Tracking]\n        Match --&gt; Assets[Asset Creation]\n        Assets --&gt; Anim[Layout & Anim]\n        Anim --&gt; FX[FX & Simulation]\n        FX --&gt; Light[Lighting & Render]\n        Light --&gt; Comp[Compositing]\n        Comp --&gt; Final[Final Delivery]\n    end\n\n    style Script fill:#3f51b5,stroke:#fff,stroke-width:1px,color:#fff\n    style Concept fill:#3f51b5,stroke:#fff,stroke-width:1px,color:#fff\n    style Shoot fill:#e91e63,stroke:#fff,stroke-width:1px,color:#fff\n    style Match fill:#4caf50,stroke:#fff,stroke-width:1px,color:#fff\n    style Assets fill:#4caf50,stroke:#fff,stroke-width:1px,color:#fff\n    style Anim fill:#4caf50,stroke:#fff,stroke-width:1px,color:#fff\n    style FX fill:#4caf50,stroke:#fff,stroke-width:1px,color:#fff\n    style Light fill:#4caf50,stroke:#fff,stroke-width:1px,color:#fff\n    style Comp fill:#4caf50,stroke:#fff,stroke-width:1px,color:#fff\n    style Final fill:#ffc107,stroke:#fff,stroke-width:1px,color:#333\n\n\n\n\n\n\n\n\nPre-production establishes the plan.\nThe shoot captures physical plates without background elements (using green screen).\nEverything else is post-production. High risk if there is an issue with the plates or assets."
+  },
+  {
+    "objectID": "index.html#virtual-production-vp-pipeline",
+    "href": "index.html#virtual-production-vp-pipeline",
+    "title": "Rolling Through the Pipeline",
+    "section": "Virtual Production (VP) Pipeline",
+    "text": "Virtual Production (VP) Pipeline\nThe Virtual Production pipeline is iterative and non-linear. Assets are built early and updated dynamically via a real-time feedback loop.\n\n\n\n\n\ngraph TD\n    subgraph VAD [Virtual Art Department]\n        VAD_Assets[Real-time Assets] &lt;--&gt; Previz[Previz & Techviz]\n    end\n    subgraph Prod [Virtual Production Shoot]\n        Engine[Real-time Engine] &lt;--&gt; LED[LED Volume Playback]\n        Engine &lt;--&gt; Tracker[Camera Tracking]\n        LED --&gt; Shoot[ICVFX Capture]\n        Actors[Actors / Sets] --&gt; Shoot\n    end\n    subgraph Post [Post-Production]\n        Shoot --&gt; Clean[Color & Cleanup]\n        Clean --&gt; Final[Final Delivery]\n    end\n\n    VAD_Assets &lt;--&gt; Engine\n    \n    style VAD_Assets fill:#2196F3,stroke:#fff,stroke-width:1px,color:#fff\n    style Previz fill:#2196F3,stroke:#fff,stroke-width:1px,color:#fff\n    style Engine fill:#9C27B0,stroke:#fff,stroke-width:1px,color:#fff\n    style LED fill:#9C27B0,stroke:#fff,stroke-width:1px,color:#fff\n    style Tracker fill:#9C27B0,stroke:#fff,stroke-width:1px,color:#fff\n    style Shoot fill:#E91E63,stroke:#fff,stroke-width:1px,color:#fff\n    style Final fill:#FFC107,stroke:#fff,stroke-width:1px,color:#333\n\n\n\n\n\n\n\n\nThe VAD (Virtual Art Department) builds 3D assets upfront.\nPreviz and techviz define camera and layout.\nThe LED walls provide perspective-correct backgrounds via real-time camera tracking.\nPost-production footprint is greatly reduced to color grading and minor cleanups."
+  },
+  {
+    "objectID": "index.html#pipeline-comparison",
+    "href": "index.html#pipeline-comparison",
+    "title": "Rolling Through the Pipeline",
+    "section": "Pipeline Comparison",
+    "text": "Pipeline Comparison\n\n\n\n\n\n\n\n\nParadigm\nClassic VFX Pipeline\nVirtual Production Pipeline\n\n\n\n\nWorkflow\nLinear / Sequential\nIterative / Parallel\n\n\nAsset Creation\nIn Post-Production\nIn Pre-Production (VAD)\n\n\nFeedback Loop\nDelayed (Weeks/Months)\nReal-time (On-set)\n\n\nFinal Capture\nGreenscreen (Composite later)\nIn-Camera VFX (ICVFX)\n\n\n\n\n\nBriefly summarize this table.\nEmphasize the shift in where decisions and budgets are allocated."
+  },
+  {
+    "objectID": "index.html#the-vp-stage-in-action",
+    "href": "index.html#the-vp-stage-in-action",
+    "title": "Rolling Through the Pipeline",
+    "section": "The VP Stage in Action",
+    "text": "The VP Stage in Action\n\n\nThis is a photo of the actual 32’ x 16’ LED stage with RIT students in action.\nExplain the visual layout: LED wall, inner and outer frustums."
+  },
+  {
+    "objectID": "index.html#the-pedagogical-gap",
+    "href": "index.html#the-pedagogical-gap",
+    "title": "Rolling Through the Pipeline",
+    "section": "The Pedagogical Gap",
+    "text": "The Pedagogical Gap\n\n\n\nTool-Specific Training Focus: Many existing curricula emphasize learning a specific software (e.g., Unreal Engine) rather than the overall workflow.\nAcademic vs. Industry Pacing: Need to balance industry-grade collaborative technical rigor with academic flexibility and different learning styles.\nThe Goal: Deliver visual literacy that bridges creative storytelling with deep technical adaptability.\n\n\n\n\n\nThe Core Objective\n\n\nAdapt industry-standard tools, systems, and pipelines for early VP education while preserving the flexible pacing of an academic environment.\n\n\n\n\n\n\nTraditional courses treat VP as a mere extension of game design.\nOur curriculum teaches the full integrated pipeline from scratch."
+  },
+  {
+    "objectID": "index.html#the-industry-aligned-platform",
+    "href": "index.html#the-industry-aligned-platform",
+    "title": "Rolling Through the Pipeline",
+    "section": "The Industry-Aligned Platform",
+    "text": "The Industry-Aligned Platform\n\n\nHardware & Stage\n\nThe Stage: 32′ × 16′ LED wall with a 2.3 mm pixel pitch.\nThe Processors: Brompton processors driving the LED panels.\nThe Power: GPU workstation with dual NVIDIA A6000 GPUs rendering separate inner (camera frustum) and outer (context/lighting) views.\n\n\nSystem Integration\n\nUnreal Engine: Runs the virtual environment and manages color calibration.\nMo-Sys Tracking: Synchronizes physical camera movement to the virtual camera in real time.\nNetwork Fabric: Central workstation coordinates communication over a dedicated high-speed Ethernet network.\n\n\n\n\nThe dual GPU setup allows rendering the perspective-correct inner frustum for the camera and a lower-res outer frustum for lighting and reflections on the actors."
+  },
+  {
+    "objectID": "index.html#a-heterogeneous-cohort",
+    "href": "index.html#a-heterogeneous-cohort",
+    "title": "Rolling Through the Pipeline",
+    "section": "A Heterogeneous Cohort",
+    "text": "A Heterogeneous Cohort\n\nDiverse Backgrounds: Enrolled students from Film, Animation, Game Design, and Digital Media.\nMinimal Prerequisites: Only basic familiarity with imaging concepts and at least one production tool (e.g., 3D modeling, game engine, or version control) was recommended.\nCore Focus: Building confidence in multi-role collaboration and establishing a shared language between technical and creative disciplines.\n\n\n\nThe class had 11 students.\nGetting students with different backgrounds to work together is a key challenge and success of the course."
+  },
+  {
+    "objectID": "index.html#three-learning-environments",
+    "href": "index.html#three-learning-environments",
+    "title": "Rolling Through the Pipeline",
+    "section": "Three Learning Environments",
+    "text": "Three Learning Environments\n\n\n1. Screening Room\nFor conceptual critique, storyboarding, shot planning, and narrative flow evaluation.\n\n2. Media Lab\nFor digital asset creation (Unreal, Blender, Nuke), previsualization, and version control (Perforce).\n\n3. LED Stage\nFor full hardware integration, camera calibration, lighting matches, and live-action shoot.\n\n\n\nStudents move between these three spaces iteratively depending on the milestone.\nThe separation helps structure the workflow from concept to asset to stage."
+  },
+  {
+    "objectID": "index.html#course-progression",
+    "href": "index.html#course-progression",
+    "title": "Rolling Through the Pipeline",
+    "section": "Course Progression",
+    "text": "Course Progression\n\n\nWeeks 1–2\nSystem Introduction - Tour of the LED stage. - Examination of rendering & tracking pipelines. - Hands-on camera and wall operation.\n\nWeeks 3–5\nConcept & Teams - Storyboards and engine blockouts. - Feasibility reviews and critiques. - Production team formation.\n\nWeeks 6+\nIterative Production - Testing camera, lighting, and physical alignment. - Rotating roles (camera, lighting, control board, actor).\n\n\n\nRole rotation ensures every student understands the operational dependencies of the stage."
+  },
+  {
+    "objectID": "index.html#assessment-milestones",
+    "href": "index.html#assessment-milestones",
+    "title": "Rolling Through the Pipeline",
+    "section": "Assessment Milestones",
+    "text": "Assessment Milestones\n\n\nStoryboard\nDefines the narrative flow, shot composition, and staging intent.\n\nPrevisualization\nRolling submissions of shot drafts, camera tests, and environment blockouts.\n\nTechviz\nFinalizing the toolchains, assets, role assignments, and stage readiness.\n\n\n\nThe assessment balances creative outcomes with technical planning and teamwork.\nSummarized in the paper (Knuth 1984)."
+  },
+  {
+    "objectID": "index.html#key-takeaways",
+    "href": "index.html#key-takeaways",
+    "title": "Rolling Through the Pipeline",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nEcosystem Fluency: Students learned how early creative choices (e.g., set design) dictate downstream technical constraints (e.g., frame rate, GPU memory).\nWorkflow Literacy: Hands-on experience with industry tools: Unreal Engine, Blender, Nuke, Premiere, and Perforce.\nThe “Hidden” Lesson: The critical importance of IT infrastructure, network speed, version control, and team logistics in large-scale production.\n\n\n\nWorking across spaces made infrastructure dependencies highly visible.\nTeamwork and communication were as important as technical skills."
+  },
+  {
+    "objectID": "index.html#thank-you",
+    "href": "index.html#thank-you",
+    "title": "Rolling Through the Pipeline",
+    "section": "Thank You",
+    "text": "Thank You\n\n\nAcknowledgments\n\nSupported by the Epic Games MegaGrant, RIT Previsualization and Virtual Production Curriculum Development.\nSupported in part by the National Science Foundation (Grant No. 2238180).\nSpecial thanks to RIT’s MAGIC Center, MAGIC IT team, and the lab staff."
+  },
+  {
+    "objectID": "index.html#references",
+    "href": "index.html#references",
+    "title": "Rolling Through the Pipeline",
+    "section": "References",
+    "text": "References\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. (USA) 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#a-course-model-for-virtual-production-education",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#a-course-model-for-virtual-production-education",
+    "title": "",
+    "section": "A Course Model for Virtual Production Education",
+    "text": "A Course Model for Virtual Production Education"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#flip-phillips¹³",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#flip-phillips¹³",
+    "title": "",
+    "section": "Flip Phillips¹³",
+    "text": "Flip Phillips¹³"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#david-long¹³",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#david-long¹³",
+    "title": "",
+    "section": "David Long¹³",
+    "text": "David Long¹³"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#aidan-montag¹",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#aidan-montag¹",
+    "title": "",
+    "section": "Aidan Montag¹",
+    "text": "Aidan Montag¹"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#chao-peng²³",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#chao-peng²³",
+    "title": "",
+    "section": "Chao Peng²³",
+    "text": "Chao Peng²³"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#rochester-institute-of-technology",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#rochester-institute-of-technology",
+    "title": "",
+    "section": "Rochester Institute of Technology",
+    "text": "Rochester Institute of Technology"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#motion-picture-science",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#motion-picture-science",
+    "title": "",
+    "section": "¹ Motion Picture Science",
+    "text": "¹ Motion Picture Science"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#interactive-games-and-media",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#interactive-games-and-media",
+    "title": "",
+    "section": "² Interactive Games and Media",
+    "text": "² Interactive Games and Media"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#magic-center",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#magic-center",
+    "title": "",
+    "section": "## ³ MAGIC Center",
+    "text": "## ³ MAGIC Center"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#the-shift-in-filmmaking",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#the-shift-in-filmmaking",
+    "title": "",
+    "section": "The Shift in Filmmaking",
+    "text": "The Shift in Filmmaking\n\nLinear pipeline → Interactive, collaborative workflow\nReal-time computer graphics + Cinematic practice\nCreative decisions happen simultaneously on set\n\n/assets/L1020142.JPG"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#the-pedagogical-gap",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#the-pedagogical-gap",
+    "title": "",
+    "section": "The Pedagogical Gap",
+    "text": "The Pedagogical Gap\n\nCurrent curricula often focus on tool-specific training\nNeed for integrated workflows aligned with real-world production\nThe Goal: Balance creative exploration with technical rigor"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#the-industry-aligned-platform",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#the-industry-aligned-platform",
+    "title": "",
+    "section": "The Industry-Aligned Platform",
+    "text": "The Industry-Aligned Platform\n\nThe Stage: 32′×16′ LED wall (2.3 mm pixel pitch)\nThe Tech: Dual NVIDIA A6000 GPUs + Brompton processors\nThe Brain: Unreal Engine for real-time rendering\nThe Sync: Mo-Sys tracking for physical/virtual camera alignment"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#a-heterogeneous-cohort",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#a-heterogeneous-cohort",
+    "title": "",
+    "section": "A Heterogeneous Cohort",
+    "text": "A Heterogeneous Cohort\n\nStudents from Film, Animation, Game Design, and Digital Media\nMinimal prerequisites required\nFocus on multi-role collaboration and shared vocabulary"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#three-learning-environments",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#three-learning-environments",
+    "title": "",
+    "section": "Three Learning Environments",
+    "text": "Three Learning Environments\n\nScreening Room: Conceptual critique and shot planning\nMedia Lab: Digital asset creation and version control\nLED Stage: Full hardware integration and live testing"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#course-progression",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#course-progression",
+    "title": "",
+    "section": "Course Progression",
+    "text": "Course Progression\n\nWeeks 1-2: System-level intro & embodied activities\nWeeks 3-5: Concept development & team formation\nWeeks 6+: Iterative testing and role rotation"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#assessment-milestones",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#assessment-milestones",
+    "title": "",
+    "section": "Assessment Milestones",
+    "text": "Assessment Milestones\n\nStoryboard: Narrative flow and staging intent\nPrevisualization: Rolling submissions of shot drafts\nTechnical Visualization: Toolchains, assets, and stage readiness"
+  },
+  {
+    "objectID": "SIGGRAPH 2026.iapresenter/text.html#key-takeaways",
+    "href": "SIGGRAPH 2026.iapresenter/text.html#key-takeaways",
+    "title": "",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nEcosystem Fluency: Understanding how creative decisions affect technical constraints\nWorkflow Literacy: Practical experience with Unreal Engine, Blender, and Perforce\nThe Hidden Lesson: The critical importance of IT infrastructure and logistics"
+  }
+]
