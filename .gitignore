@@ -1,5 +1,14 @@
+# Quarto local build outputs
+_site/
 .quarto/
+*.quarto_ipynb
+
+# Old standalone HTML outputs
+index.html
+index_files/
+SIGGRAPH 2026.iapresenter/text.html
+SIGGRAPH 2026.iapresenter/text_files/
+
+# OS/System files
 .DS_Store
-# index_files/
-# index.html
-# Uncomment the above if you prefer not to track the rendered HTML outputs in the repository
+Thumbs.db
