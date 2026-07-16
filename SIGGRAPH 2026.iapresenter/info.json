@@ -1,0 +1,18 @@
+{
+  "creatorIdentifier" : "net.ia.presenter",
+  "net.ia.presenter" : {
+    "appearance" : "dark",
+    "audience" : "Vision and Depiction 2026",
+    "author" : "Flip Phillips",
+    "bodyfont" : "Neue Haas Grotesk Display Pro",
+    "footertrailing" : "logo",
+    "localFileIdentifier" : "8BAECF94-F79C-444D-B2DA-327C93682F02",
+    "logo" : "\/assets\/MAGIC_MotionPictureScience_1505C_hor_w1.pdf",
+    "logo-size" : "8.5",
+    "text-scale-intensity" : "1.0",
+    "titlefont" : "Neue Haas Grotesk Display Pro"
+  },
+  "transient" : false,
+  "type" : "net.daringfireball.markdown",
+  "version" : 2
+}

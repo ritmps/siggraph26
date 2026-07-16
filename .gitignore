@@ -1,0 +1,5 @@
+.quarto/
+.DS_Store
+# index_files/
+# index.html
+# Uncomment the above if you prefer not to track the rendered HTML outputs in the repository
